@@ -20,6 +20,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@tsconfig/node22": "^22.0.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.21",
