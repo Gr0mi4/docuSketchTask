@@ -85,7 +85,7 @@ import {
     calculateRoomDimensionsForAxis,
     filterUniqueDirectionWalls,
     getMeasurementAxes,
-} from "@/utils/calculateDimensions.ts";
+} from "@/utils/calculateDimensions";
 
 import DimensionLine from "@/components/DimensionLine.vue";
 import ErrorDisplay from "@/components/ErrorDisplay.vue";
@@ -132,16 +132,16 @@ function changeSelectedAxisSystem() {
     }
 }
 
-const widthProps = ref<DimensionProps | object>({
+const widthProps = ref<DimensionProps>({
     measurement: 0,
-    start: null,
-    end: null,
+    start: { x: 0, y: 0 },
+    end: { x: 0, y: 0 },
 });
 const WIDTH_OFFSET = 40;
-const lengthProps = ref<DimensionProps | object>({
+const lengthProps = ref<DimensionProps>({
     measurement: 0,
-    start: null,
-    end: null,
+    start: { x: 0, y: 0 },
+    end: { x: 0, y: 0 },
 });
 const LENGTH_OFFSET = 40;
 

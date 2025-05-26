@@ -46,8 +46,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import type { Point } from "@/types/geometry.ts";
-import { createVector, normalizeVector, perpendicularVector } from "@/utils/vectorMath.ts";
+import type { Point } from "@/types/geometry";
+import { createVector, normalizeVector, perpendicularVector } from "@/utils/vectorMath";
 
 const props = defineProps({
     startPoint: {

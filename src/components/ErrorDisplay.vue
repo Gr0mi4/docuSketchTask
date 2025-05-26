@@ -18,13 +18,6 @@
                     </details>
                 </div>
 
-                <div v-if="error.stack" class="error-stack">
-                    <details>
-                        <summary>Stack Trace</summary>
-                        <pre>{{ error.stack }}</pre>
-                    </details>
-                </div>
-
                 <button
                     @click="dismissError(error.id)"
                     class="dismiss-btn"
@@ -81,17 +74,17 @@ const { errors, dismissError } = useErrorHandler();
     margin-bottom: 5px;
 }
 
-.error-details, .error-stack {
+.error-details {
     margin: 10px 0;
 }
 
-.error-details summary, .error-stack summary {
+.error-details summary, summary {
     cursor: pointer;
     font-weight: bold;
     color: #7c3aed;
 }
 
-.error-details pre, .error-stack pre {
+.error-details pre {
     background: #f8f9fa;
     padding: 10px;
     border-radius: 4px;
